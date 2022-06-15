@@ -1,0 +1,9 @@
+extension["特效测试"]={
+	intro:"",
+	author:"无名玩家",
+	netdisk:"",
+	forum:"",
+	version:"1.0",
+	files:["extension.js","bingletexiaole.png","乐不动画.gif","bl.gif","sd.gif","对勾.gif","叉.gif"],
+	size:"5KB"
+};

@@ -348,9 +348,9 @@ table {
 	pointer-events: none;
 }
 #splash>div {
-	width: 100px;
-	height: 300px;
-	top: calc(50% - 150px);
+	width: 200px;
+	height: 349px;
+	top: calc(50% - 180px);
 	margin-left: 10px;
 	margin-right: 10px;
 	position: relative;
@@ -381,8 +381,8 @@ table {
 	transition: all 0.5s;
 }
 #splash>div>.splashtext {
-	font-family: 'huangcao','xinwei';
-	font-size: 50px;
+	font-family: 'shousha','xinwei';
+	font-size: 0px;
 	position: absolute;
 	right: 7px;
 	bottom: 7px;
@@ -397,14 +397,14 @@ table {
 }
 
 #splash.slim>div>.splashtext{
-	right: 5px;
-	bottom: 5px;
+	right: 0px;
+	bottom: 240px;
 }
 #splash.slim>div>.avatar{
-	width: 90px;
-	height: calc(100% - 10px);
-	left: 5px;
-	top: 5px;
+	width: 200px;
+	height: calc(100% - 0px);
+	left: 0px;
+	top: 0px;
 }
 
 #splash[data-radius_size='reduce']>div>div,
@@ -1447,10 +1447,6 @@ div:not(.handcards)>.card>.info>span,
 .button.card.button>.intro {
 	top: 69px;
 }
-.buttons.guanxing {
-	min-height: 110px;
-	width: 90%;
-}
 .buttons.smallzoom {
 	display: block;
 	zoom: 0.65
@@ -1467,10 +1463,10 @@ div:not(.handcards)>.card>.info>span,
 	margin-left: 0px;
 	margin-right: 0px;
 }
-.buttons.scrollbuttons:not(.popup) .button:first-child{
+.buttons.scrollbuttons .button:first-child{
 	margin-left: 12px;
 }
-.buttons.scrollbuttons:not(.popup) .button:last-child{
+.buttons.scrollbuttons .button:last-child{
 	margin-right: 12px;
 }
 /*.buttons.smallzoom .card.button>.name,
@@ -1977,10 +1973,6 @@ div:not(.handcards)>.card>.info>span,
 	border: 1px solid rgba(39, 79, 7, 1);
 	box-shadow: rgba(0,0,0,0.2) 1px -1px 2px inset, rgba(255,255,255,0.15) -1px 1px 5px inset;
 }
-.button.newstyle>.hp>.shield{
-	background: rgba(63, 119, 173,1);
-	border: 1px solid rgba(31, 82, 131, 1);
-}
 .button.newstyle>.hp>div.text{
 	background: none !important;
 	box-shadow: none !important;
@@ -2133,7 +2125,6 @@ div:not(.handcards)>.card>.info>span,
 	width: 100%;
 	font-size: 12px;
 	text-align: center;
-	white-space: nowrap;
 	/*opacity: 0;*/
 }
 .player:hover>.nameol {
@@ -2613,35 +2604,31 @@ div:not(.handcards)>.card>.info>span,
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
 	border: 1px solid #fff;
 }
-.button .hp>.shield {
-	background: rgba(63, 119, 173,1);
-	border: 1px solid rgba(63, 119, 173, 1);
-}
-.hp[data-condition="high"]>div:not(.lost):not(.shield) {
+.hp[data-condition="high"]>div:not(.lost) {
 	background: rgba(57, 123, 4,1);
 	border: 1px solid rgba(39, 79, 7, 1);
 }
-.hp[data-condition="mid"]>div:not(.lost):not(.shield) {
+.hp[data-condition="mid"]>div:not(.lost) {
 	background: rgba(166, 140, 6,1);
 	border: 1px solid rgba(79, 64, 7, 1);
 }
-.hp[data-condition="low"]>div:not(.lost):not(.shield) {
+.hp[data-condition="low"]>div:not(.lost) {
 	background: rgba(148, 27, 27,1);
 	border: 1px solid rgba(79, 7, 7, 1);
 }
-.hp.actcount>div:not(.lost):not(.shield) {
+.hp.actcount>div:not(.lost) {
 	background: rgba(63, 119, 173,1);
 	border: 1px solid rgba(31, 82, 131, 1);
 }
-.treasure>.hp>div:not(.lost):not(.shield) {
+.treasure>.hp>div:not(.lost) {
 	background: rgba(63, 119, 173,1) !important;
 	border: 1px solid rgba(31, 82, 131, 1) !important;
 }
-.hp.actcount>div.overflow:not(.lost):not(.shield) {
+.hp.actcount>div.overflow:not(.lost) {
 	background: rgb(154, 154, 154);
 	border: 1px solid rgb(109, 109, 109);
 }
-.hp.actcount.overflow2>div.overflow:not(.lost):not(.shield) {
+.hp.actcount.overflow2>div.overflow:not(.lost) {
 	background: rgb(173, 129, 63);
 	border: 1px solid rgb(131, 109, 31);
 }
@@ -2651,16 +2638,11 @@ div:not(.handcards)>.card>.info>span,
 	filter: grayscale(1);
 	-webkit-filter: grayscale(1);
 }
-
 .hp>.lost {
 	background: rgba(57, 123, 4,1);
 	border: 1px solid rgba(39, 79, 7, 1);
 	filter: grayscale(1);
 	-webkit-filter: grayscale(1);
-}
-.hp>.shield {
-	background: rgba(63, 119, 173,1);
-	border: 1px solid rgba(31, 82, 131, 1);
 }
 .hp.text[data-condition="low"],
 .hp.textstyle[data-condition="low"] {
@@ -3250,47 +3232,6 @@ div:not(.handcards)>.card>.info>span,
 	left: calc(50% + 20px);
 	top: calc(50% + 80px)
 }
-#window>.player.connect[data-position='cx0']{
-	left:calc(150% / 7 - 1275px / 7);
-	top:calc(300% / 7 - 160px + 5px);
-}
-#window>.player.connect[data-position='cx1']{
-	left:calc(247% / 7 - 850px / 7);
-	top:calc(300% / 7 - 160px + 5px);
-}
-#window>.player.connect[data-position='cx2']{
-	left:calc(350% / 7 - 525px / 7);
-	top:calc(300% / 7 - 160px + 5px);
-}
-#window>.player.connect[data-position='cx3']{
-	left:calc(453% / 7 - 200px / 7);
-	top:calc(300% / 7 - 160px + 5px);
-}
-#window>.player.connect[data-position='cx4']{
-	left:calc(550% / 7 + 125px / 7);
-	top:calc(300% / 7 - 160px + 5px);
-}
-#window>.player.connect[data-position='cx5']{
-	left:calc(150% / 7 - 1275px / 7);
-	top:calc(400% / 7 - 40px + 5px);
-}
-#window>.player.connect[data-position='cx6']{
-	left:calc(247% / 7 - 850px / 7);
-	top:calc(400% / 7 - 40px + 5px);
-}
-#window>.player.connect[data-position='cx7']{
-	left:calc(350% / 7 - 525px / 7);
-	top:calc(400% / 7 - 40px + 5px);
-}
-#window>.player.connect[data-position='cx8']{
-	left:calc(453% / 7 - 200px / 7);
-	top:calc(400% / 7 - 40px + 5px);
-}
-#window>.player.connect[data-position='cx9']{
-	left:calc(550% / 7 + 125px / 7);
-	top:calc(400% / 7 - 40px + 5px);
-}
-
 #window>.player.connect {
 	width: 120px;
 }
@@ -3307,7 +3248,6 @@ div:not(.handcards)>.card>.info>span,
 	top: auto;
 	right: 20px;
 	bottom: 20px;
-	z-index: 5;
 }
 .connectevents.server{
 	left: 20px;
@@ -3315,9 +3255,6 @@ div:not(.handcards)>.card>.info>span,
 }
 .connectevents.left{
 	transform: translateX(-85px);
-}
-.connectevents.left2{
-	transform: translateX(-170px);
 }
 .connectevents.icon{
 	width: 20px;
@@ -4062,10 +3999,10 @@ div[data-decoration="gold"]::before,
 	position:absolute;
 	background-image:url('../../theme/style/player/gold_d1.png');
 	background-size:100% 100%;
-	width:41px;
-	height:80px;
-	left:-13px;
-	top:-19px;
+	width:65px;
+	height:115px;
+	right:-21px;
+	top:-25px;
 }
 .button[data-decoration="gold"]::before{
 	transform:scale(0.75) translate(-3px,-3px);
@@ -4076,12 +4013,12 @@ div[data-decoration="gold"]::after,
 	position:absolute;
 	background-image:url('../../theme/style/player/gold_d2.png');
 	background-size:100% 100%;
-	width:75px;
-	height:32px;
+	width:80px;
+	height:40px;
 	left: auto;
 	top: auto;
 	right:-8px;
-	bottom:-8px;
+	bottom:-10px;
 }
 .button[data-decoration="gold"]::after{
 	transform: scale(0.75) translate(10px,2px);
@@ -4093,10 +4030,10 @@ div[data-decoration="silver"]::before,
 	position:absolute;
 	background-image:url('../../theme/style/player/silver_d1.png');
 	background-size:100% 100%;
-	width:41px;
-	height:61px;
-	left:-13px;
-	top:-14px;
+	width:60px;
+	height:90px;
+	right:-19px;
+	top:-18px;
 }
 .button[data-decoration="silver"]::before{
 	transform:scale(0.75) translate(-2px,-3px);
@@ -4107,12 +4044,12 @@ div[data-decoration="silver"]::after,
 	position:absolute;
 	background-image:url('../../theme/style/player/silver_d2.png');
 	background-size:100% 100%;
-	width:69px;
-	height:21px;
+	width:85px;
+	height:20px;
 	left: auto;
 	top: auto;
 	right:-8px;
-	bottom:-9px;
+	bottom:-10px;
 }
 .button[data-decoration="silver"]::after{
 	transform: scale(0.75) translate(10px,0px);
@@ -4124,10 +4061,10 @@ div[data-decoration="bronze"]::before,
 	position:absolute;
 	background-image:url('../../theme/style/player/bronze_d1.png');
 	background-size:100% 100%;
-	width:40px;
-	height:80px;
-	left:-13px;
-	top:-18px;
+	width:60px;
+	height:110px;
+	right:-18.5px;
+	top:-22px;
 }
 .button[data-decoration="bronze"]::before{
 	transform:scale(0.75) translate(-2px,-3px);
@@ -4138,12 +4075,12 @@ div[data-decoration="bronze"]::after,
 	position:absolute;
 	background-image:url('../../theme/style/player/bronze_d2.png');
 	background-size:100% 100%;
-	width:69px;
-	height:21px;
+	width:80px;
+	height:40px;
 	left: auto;
 	top: auto;
 	right: -8px;
-	bottom: -5px;
+	bottom: -10px;
 }
 .button[data-decoration="bronze"]::after{
 	transform:scale(0.75) translate(9px,2px);
@@ -5344,5 +5281,4 @@ div[data-decoration="bronze"]::after{
 /*--------其它--------*/
 ::-webkit-scrollbar {
 	display: none;
-}
 }
