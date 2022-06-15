@@ -82,6 +82,8 @@ window.noname_source_list=[
 	'extension/cardpile/extension.js',
 	'extension/coin/extension.js',
 	'extension/wuxing/extension.js',
+	'extension/界面美化/extension.js',
+	'extension/特效测试/extension.js',
 	'theme/music/grid.png',
 	'theme/music/style.css',
 	'theme/music/wood.png',
